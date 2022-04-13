@@ -20,16 +20,43 @@ ul {
 }
 
 small {
-    font-size: 8px;
+    font-size: 10px;
     font-family: 'Fredoka', sans-serif;
 }
 
-.weather-app {
-    max-width: 500px;
+.overview {
+    margin-bottom: 40px;
+}
+
+.weather-app-cntr {
+    max-width: 600px;
     margin: 30px auto;
+    padding: 0;
+}
+
+.weather-app {
     padding: 20px;
     border: 2px solid #BD7682;
     border-radius: 15px;
+}
+
+.weather-icon img {
+    margin-right: 20px;
+}
+
+.weather-icon strong {
+    color: rgb(130,112,141);
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+}
+
+.weather-icon .units {
+    color: rgb(130,112,141);
+    font-family: 'Russo One', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
 }
 
 
