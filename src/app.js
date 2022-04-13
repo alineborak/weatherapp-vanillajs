@@ -1,7 +1,3 @@
-let apiKey = "384781b633046620eaed677419a0ac6e";
-let city = "Amsterdam";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
 function formatDate(timeStamp) {
     let date = new Date(timeStamp);
     let hours = date.getHours();
@@ -28,4 +24,18 @@ function displayTemperature(response) {
     document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
 }
 
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+    let apiKey = "384781b633046620eaed677419a0ac6e";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInput = document.querySelector("#city-input");
+    search(cityInput.value);
+}
+search("New York");
+
+let form = document.querySelector("search-form");
+form.addEventListener("submit", handleSubmit);

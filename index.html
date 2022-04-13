@@ -17,6 +17,26 @@
     <div class="weather-app-cntr">
     <div class="container">
             <div class="weather-app">
+                <form action="" id="search-form">
+                    <div class="row">
+                        <div class="col-9">
+                    <input 
+                        type="search" 
+                        placeholder="Enter city name" 
+                        class="form-control" 
+                        id="city-input"
+                        autocomplete="off"
+                    />
+                        </div>
+                        <div class="col-3">
+                    <input 
+                        class="btn btn-outline-secondary"    
+                        type="submit" 
+                        value="Search"
+                    />
+                        </div>
+                    </div>
+                </form>
                 <div class="overview">
                     <h1 class="heading" id="city">Chicago</h1>
                     <ul>
@@ -45,6 +65,7 @@
                             </div>
                         </div>
                         <div class="col-6">
+                            <span>
                             <ul>
                                 <li>
                                     Feels like: <span id="feels-like"></span>°C
@@ -56,6 +77,7 @@
                                     Wind Speed: <span id="wind-speed"></span> km/h
                                 </li>
                             </ul>
+                        </span>
                         </div>
             </div>
         </div>

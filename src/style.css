@@ -31,6 +31,10 @@ small {
     padding-left: 20px;
 }
 
+#search-form {
+    margin-bottom: 30px;
+}
+
 .overview {
     margin-bottom: 40px;
 }
@@ -42,7 +46,7 @@ small {
 }
 
 .weather-app {
-    padding: 20px;
+    padding: 35px;
     border: 2px solid rgb(238,186,155);
     border-radius: 15px;
 }
@@ -51,7 +55,7 @@ small {
     display: inline-block;
     height: 70px;
     position: relative;
-    top: -7px;
+    top: 6px;
     right: 5px;
     vertical-align: top;
     width: 70px;
@@ -62,6 +66,8 @@ small {
     font-size: 40px;
     font-family: 'Russo One', sans-serif;
     font-weight: 400;
+    position: relative;
+    top: 12px;
 }
 
 .weather-icon .units {
@@ -70,7 +76,7 @@ small {
     font-size: 12px;
     font-weight: 400;
     position: relative;
-    top: -20px;
+    top: -6px;
 }
 
 
