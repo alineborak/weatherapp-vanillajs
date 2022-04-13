@@ -35,7 +35,25 @@ function handleSubmit(event) {
     let cityInput = document.querySelector("#city-input");
     search(cityInput.value);
 }
-search("New York");
+
+function convertFahrenheit(event) {
+    event.preventDefault();
+    let fahrenheitConversion = (14 * 9) / 5 + 32;
+    document.querySelector("#temperature-degree").innerHTML = Math.round(fahrenheitConversion);
+}
+
+function convertCelsius(event) {
+    event.preventDefault();
+    let celsiusConversion = (14 * 9) / 5 + 32;
+    document.querySelector("#temperature-degree").innerHTML = Math.round(celsiusConversion);
+}
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+document.querySelector("#fahrenheit").addEventListener("click", convertFahrenheit);
+document.querySelector("#celsius").addEventListener("click", convertCelsius);
+
+search("New York");
