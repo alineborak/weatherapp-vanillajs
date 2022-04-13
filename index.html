@@ -18,12 +18,12 @@
     <div class="container">
             <div class="weather-app">
                 <div class="overview">
-                    <h1 class="heading">Chicago</h1>
+                    <h1 class="heading" id="city">Chicago</h1>
                     <ul>
                         <li>
                             Friday 05:00 PM
                         </li>
-                        <li>
+                        <li id="current-condition">
                             Clear
                         </li>
                     </ul>
@@ -36,7 +36,7 @@
                                     class="float-left"
                                 />
                                 <div class="float-left">
-                                    <strong>12</strong>
+                                    <strong id="temperature-degree"></strong>
                                     <span class="units">
                                         °C | <a href="">F°</a>
                                     </span>
@@ -46,10 +46,13 @@
                         <div class="col-6">
                             <ul>
                                 <li>
-                                    Humidity: 50%
+                                    Feels like: <span id="feels-like"></span>°C
                                 </li>
                                 <li>
-                                    Wind Speed: 20km/h
+                                    Humidity: <span id="humidity"></span>%
+                                </li>
+                                <li>
+                                    Wind Speed: <span id="wind-speed"></span> km/h
                                 </li>
                             </ul>
                         </div>
