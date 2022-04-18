@@ -39,6 +39,15 @@ small {
     margin-bottom: 40px;
 }
 
+.weather-icon .active {
+    color: rgb(130,112,141);
+}
+
+.weather-icon .active:hover {
+    color: rgb(201, 146, 235);
+    text-decoration: none;
+}
+
 .weather-app-cntr {
     max-width: 600px;
     margin: 30px auto;
