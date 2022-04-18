@@ -25,13 +25,17 @@ ul {
 }
 
 small {
-    color: rgb(130,112,141);
-    font-size: 10px;
+    color: #fff;
+    font-size: 12px;
     font-family: 'Fredoka', sans-serif;
     padding-left: 20px;
 }
 
-#myVideo {
+small a {
+    color: rgb(148, 228, 242);
+}
+
+  #background-img {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -97,8 +101,3 @@ small {
     position: relative;
     top: -6px;
 }
-
-
-/* 
-font-family: 'Padauk', sans-serif;
-font-family: 'Staatliches', cursive; */
