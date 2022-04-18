@@ -10,7 +10,7 @@ function formatDate(timeStamp) {
     }
     let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     let day = weekdays[date.getDay()];
-    return `${day} ${hours} ${minutes}`;
+    return `${day} ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {

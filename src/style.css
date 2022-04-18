@@ -31,6 +31,15 @@ small {
     padding-left: 20px;
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
 #search-form {
     margin-bottom: 30px;
 }
@@ -56,6 +65,7 @@ small {
 
 .weather-app {
     padding: 35px;
+    background-color: aliceblue;
     border: 2px solid rgb(238,186,155);
     border-radius: 15px;
 }
