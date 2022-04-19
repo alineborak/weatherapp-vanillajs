@@ -69,12 +69,10 @@ small a {
 
 .weather-app {
     border: transparent;
-  background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 35px;
-    /* background-color: aliceblue; */
-    border: 2px solid rgb(238,186,155);
     border-radius: 15px;
 }
 
