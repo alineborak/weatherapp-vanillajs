@@ -25,14 +25,14 @@ ul {
 }
 
 small {
-    color: #fff;
+    color: rgb(130,112,141);
     font-size: 12px;
     font-family: 'Fredoka', sans-serif;
     padding-left: 20px;
 }
 
 small a {
-    color: rgb(148, 228, 242);
+    color: rgb(67,96,125);
 }
 
   #background-img {
@@ -68,8 +68,12 @@ small a {
 }
 
 .weather-app {
+    border: transparent;
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
     padding: 35px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border: 2px solid rgb(238,186,155);
     border-radius: 15px;
 }

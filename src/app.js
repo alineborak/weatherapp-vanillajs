@@ -42,7 +42,8 @@ function handleSubmit(event) {
 function convertFahrenheit(event) {
     event.preventDefault();
     fahrenheitTemperature = document.querySelector("#temperature-degree");
-    // celsiusTemperature.classList.remove("active");
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
     let fahrenheitConversion = (celsiusTemperature * 9) / 5 + 32;
     fahrenheitTemperature.innerHTML = Math.round(fahrenheitConversion);
 }
@@ -50,6 +51,8 @@ function convertFahrenheit(event) {
 function convertCelsius(event) {
     event.preventDefault();
     let celsiusConversion = celsiusTemperature;
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
     document.querySelector("#temperature-degree").innerHTML = Math.round(celsiusConversion);
 }
 
@@ -58,7 +61,10 @@ let celsiusTemperature = null;
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-document.querySelector("#fahrenheit").addEventListener("click", convertFahrenheit);
-document.querySelector("#celsius").addEventListener("click", convertCelsius);
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", convertFahrenheit);
 
-search("New York");
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", convertCelsius);
+
+search("Rotterdam");
