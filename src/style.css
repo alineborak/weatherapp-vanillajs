@@ -10,7 +10,7 @@ h1 {
 }
 
 li { 
-    color: rgb(165, 129, 137);
+    color: rgb(94, 72, 77);
     font-family: 'Fredoka', sans-serif;
     font-weight: 100px;
     font-size: 15px;
@@ -54,6 +54,10 @@ small a {
 
 #search-form {
     margin-bottom: 30px;
+}
+
+.btn-outline-info {
+    color: #fff;
 }
 
 .overview {
