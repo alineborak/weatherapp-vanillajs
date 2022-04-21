@@ -16,28 +16,28 @@
 <body>
     <img src="media/img.jpg" alt="" id="background-img">
     <div class="weather-app-cntr">
-    <div class="container">
-            <div class="weather-app">
-                <form action="" id="search-form">
-                    <div class="row">
-                        <div class="col-9">
-                    <input 
-                        type="search" 
-                        placeholder="Enter city name" 
-                        class="form-control" 
-                        id="city-input"
-                        autocomplete="off"
-                    />
+        <div class="container">
+                <div class="weather-app">
+                    <form action="" id="search-form">
+                        <div class="row">
+                            <div class="col-9">
+                                <input 
+                                type="search" 
+                                placeholder="Enter city name" 
+                                class="form-control" 
+                                id="city-input"
+                                autocomplete="off"
+                                />
+                                </div>
+                                <div class="col-3">
+                                    <input 
+                                    class="btn btn-outline-info"    
+                                    type="submit" 
+                                    value="Search"
+                                    />
                         </div>
-                        <div class="col-3">
-                    <input 
-                        class="btn btn-outline-info"    
-                        type="submit" 
-                        value="Search"
-                    />
-                        </div>
-                    </div>
-                </form>
+                            </div>
+                    </form>
                 <div class="overview">
                     <h1 class="heading" id="city">Rotterdam</h1>
                     <ul>
@@ -52,18 +52,18 @@
                         <div class="col-6">
                             <div class="clearfix weather-icon">
                                 <img 
-                                    id="icon"
-                                    src="media/cloudy.png" 
-                                    alt="cloudy" 
-                                    class="float-left"
+                                id="icon"
+                                src="media/cloudy.png" 
+                                alt="cloudy" 
+                                class="float-left"
                                 />
-                                <div class="float-left">
-                                    <strong id="temperature-degree"></strong>
-                                    <span class="units">
-                                        <a href="" id="celsius" class="active">°C</a> | 
-                                        <a href="" id="fahrenheit" class="active">F°</a>
-                                    </span>
-                                </div>
+                            <div class="float-left">
+                                <strong id="temperature-degree"></strong>
+                                <span class="units">
+                                    <a href="" id="celsius" class="active">°C</a> | 
+                                    <a href="" id="fahrenheit" class="active">F°</a>
+                                </span>
+                            </div>
                             </div>
                         </div>
                         <div class="col-6">
@@ -79,15 +79,18 @@
                                     Wind Speed: <span id="wind-speed"></span> km/h
                                 </li>
                             </ul>
-                        </span>
+                            </span>
                         </div>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="forecast">
+                    
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<small>
-    <a href="https://github.com/alineborak/vanilla-weather-app" target="blank">Open-source code </a> by Aline Bora-Kloppert
-</small>
+            <small>
+                <a href="https://github.com/alineborak/vanilla-weather-app" target="blank">Open-source code </a> by Aline Bora-Kloppert
+            </small>
 </div>
     <script src="src/app.js"></script>
 </body>

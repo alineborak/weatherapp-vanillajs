@@ -51,12 +51,23 @@ small a {
     background-size: cover;
   }
 
+#date, #current-condition {
+    color: rgb(74, 37, 79);
+    font-family: 'Russo One', sans-serif;
+}
+
 #search-form {
     margin-bottom: 30px;
 }
 
 .btn-outline-info {
     color: rgb(38, 37, 37);
+}
+
+.weather-forecast {
+    font-family: 'Fredoka', sans-serif;
+    margin-top: 35px;
+    text-align: center;
 }
 
 .overview {
@@ -114,3 +125,4 @@ small a {
     position: relative;
     top: -6px;
 }
+
