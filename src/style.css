@@ -40,12 +40,12 @@ small a {
 
   #background-img {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    right: 40px;
+    top: 0px;
+    max-width: 100%;
+    /* min-height: 100%; */
     z-index: -5;
-    height: 600px;
+    /* height: 1000px; */
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
