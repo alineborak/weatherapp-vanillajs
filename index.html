@@ -31,7 +31,8 @@
                                 </div>
                                 <div class="col-3">
                                     <input 
-                                    class="btn btn-outline-info"    
+                                    class="btn btn-light" 
+                                    id="search-btn"   
                                     type="submit" 
                                     value="Search"
                                     />
@@ -59,16 +60,14 @@
                                 />
                             <div class="float-left">
                                 <strong id="temperature-degree"></strong>
-                                <span class="units">
-                                    <a href="" id="celsius" class="active">°C</a> | 
-                                    <a href="" id="fahrenheit" class="active">F°</a>
+                                <span class="units"> °C 
                                 </span>
                             </div>
                             </div>
                         </div>
                         <div class="col-6">
                             <span>
-                            <ul>
+                            <ul id="additional-info">
                                 <li>
                                     Feels like: <span id="feels-like"></span>°C
                                 </li>
