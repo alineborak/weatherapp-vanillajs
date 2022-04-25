@@ -4,7 +4,7 @@ body {
 
 h1 {
     color: rgb(242,196,168);
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 30px;
@@ -58,7 +58,7 @@ small a {
     top: 0px;
     max-width: 100%;
     min-height: 100%;
-    z-index: -10;
+    z-index: -5;
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -67,6 +67,10 @@ small a {
 #search-btn {
     color: rgb(148,77,111);
     font-family: 'Fredoka', sans-serif;
+}
+
+#search-btn:hover {
+    color: rgb(184, 50, 115);
 }
 
 #date, #current-condition {
@@ -87,10 +91,18 @@ small a {
     color: rgb(148,77,111);
 }
 
+.weather-forecast-date {
+    color: rgb(148,77,111);
+}
+
 .weather-forecast {
     font-family: 'Fredoka', sans-serif;
     margin-top: 35px;
     text-align: center;
+}
+
+.weather-temp-min {
+    color: #7f6a8a;
 }
 
 .overview {
@@ -109,14 +121,14 @@ small a {
 
 .weather-app-cntr {
     max-width: 600px;
-    margin: 30px auto;
+    margin: 50px auto;
     padding: 0;
 }
 
 .weather-app {
-    border: transparent;
+    border-style: inset;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 35px;
     border-radius: 15px;
 }
