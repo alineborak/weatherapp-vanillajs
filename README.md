@@ -1,4 +1,4 @@
-# vanilla-weather-app
+# weather-bug-app
 Weather App Search Engine
 
 Hello! Welcome to my weather api! This app is getting real time data!
