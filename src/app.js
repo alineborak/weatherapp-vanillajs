@@ -32,7 +32,6 @@ function displayForecast(response) {
             forecastHTML = forecastHTML + `
         <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div> 
-        ${index}
         <img 
             src=http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png
             alt=""
@@ -70,7 +69,6 @@ function displayTemperature(response) {
     document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
 
-    // displayForecast();
     getForecast(response.data.coord);
 }
 
