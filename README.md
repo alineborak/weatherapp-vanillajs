@@ -1,5 +1,5 @@
-# weather-bug-app
-Weather App Search Engine
+# weather-app
+Weather App Search Engine build with Vanilla JS
 
 Hello! Welcome to my weather api! This app is getting real time data!
 Stay up to date with your city weather by checking this app.
